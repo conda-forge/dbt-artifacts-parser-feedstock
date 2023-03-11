@@ -1,11 +1,11 @@
-About dbt-artifacts-parser
-==========================
+About dbt-artifacts-parser-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dbt-artifacts-parser-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/yu-iskw/dbt-artifacts-parser
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dbt-artifacts-parser-feedstock/blob/main/LICENSE.txt)
 
 Summary: A dbt artifacts parser in python
 
