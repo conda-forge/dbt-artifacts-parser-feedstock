@@ -32,8 +32,8 @@ test:
   commands:
   # Skipping pip check test because prance version number cannot be parsed correctly
   #   - pip check
-  # Tests are implemented in a strange way so for now we have to skip many of them
-    - pytest -vvv --capture=tee-sys -k "not TestCatalogParser and not TestManifestParser and not TestRunResultsParser and not TestUtils and not TestDbtUtils.test_get_dbt_schema_version" tests
+  # Tests are implemented in a strange way so for now we have to skip for now
+  #  - pytest -vvv --capture=tee-sys tests
   requires: 
     - pip
     - pytest
