@@ -1,5 +1,5 @@
 {% set name = "dbt-artifacts-parser" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dbt-artifacts-parser-{{ version }}.tar.gz
-  sha256: 8da48fd0f294270609f2270744c179de84a214d83cab257cdeb75f63e5f88722
+  sha256: 543448b84989ac65ea53b2cf0ee37e71572eecd31e7dcb0f1ecb544cdf60c73c
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ test:
   #   - pip check
   # Tests are implemented in a strange way so for now we have to skip for now
   #  - pytest -vvv --capture=tee-sys tests
-  requires: 
+  requires:
     - pip
     - pytest
 
