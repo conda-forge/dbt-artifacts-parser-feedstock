@@ -25,15 +25,11 @@ requirements:
     - datamodel-code-generator >=0.12.0
 
 test:
-  source_files:
-    - tests
   imports:
     - dbt_artifacts_parser
   commands:
   # Skipping pip check test because prance version number cannot be parsed correctly
   #   - pip check
-  # Tests are implemented in a strange way so for now we have to skip for now
-  #  - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
     - pytest
