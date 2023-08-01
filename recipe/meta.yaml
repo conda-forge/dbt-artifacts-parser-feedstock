@@ -28,11 +28,10 @@ test:
   imports:
     - dbt_artifacts_parser
   commands:
-  # Skipping pip check test because prance version number cannot be parsed correctly
-    - pip check
+    # Skipping pip check test because prance version number cannot be parsed correctly
+    # - pip check
   requires:
     - pip
-    - pytest
 
 about:
   home: https://github.com/yu-iskw/dbt-artifacts-parser
