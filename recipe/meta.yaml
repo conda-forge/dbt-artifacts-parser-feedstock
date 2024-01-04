@@ -1,5 +1,5 @@
 {% set name = "dbt-artifacts-parser" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3c83ef60855369d3ca4415ef7078828358db640c7ad91d0f3743b24a9e187adb
+  sha256: 9ad97c63170c8629e0f8bc66eeb2375b3bd164cc15b53a0e42a36d34ed1b8da1
 
 build:
   noarch: python
