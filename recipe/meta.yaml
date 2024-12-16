@@ -1,13 +1,13 @@
 {% set name = "dbt-artifacts-parser" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 688ff569ce9803db7dce7d8991ff9d7460f1f24f1513549c8652abb0aa23c689
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 072f614c8082c4423c03af538e911c0181518e82123fa53240f9afa4391edc5a
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7.0
+    - python {{ python_min }}
     - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3.7.0
+    - python >={{ python_min }}
     - pydantic >=2.0,<3.0
 
 test:
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/yu-iskw/dbt-artifacts-parser
