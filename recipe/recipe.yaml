@@ -31,7 +31,9 @@ tests:
       imports:
         - dbt_artifacts_parser
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A dbt artifacts parser in python
