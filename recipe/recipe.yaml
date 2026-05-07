@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dbt-artifacts-parser
-  version: "0.13.1"
+  version: "0.13.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: c7a3c4e309ae2d7d566a615e92043b0d346a77998203b0cc466234717b806e40
+  sha256: abb798aa73ff8cc295b4ecf03ee02d6a3bc48ad79f7d093d4bb3ffef68e77fb4
 
 build:
   number: 0
