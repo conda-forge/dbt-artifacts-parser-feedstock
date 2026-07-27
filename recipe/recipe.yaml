@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dbt-artifacts-parser
-  version: "0.13.2"
+  version: "0.14.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: abb798aa73ff8cc295b4ecf03ee02d6a3bc48ad79f7d093d4bb3ffef68e77fb4
+  sha256: c4da799afa80a3c2c6c7e51c3b5d2681be9fdd53174b3909a3ce71cfb43d5148
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - pydantic >=2.0,<3.0
+    - pydantic >=2.12,<3.0
 
 tests:
   - python:
